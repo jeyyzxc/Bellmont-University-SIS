@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.header {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(img/Corpus-Christi-College-University-of-Cambridge-England.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 150px;
+    background: transparent;
+    transform: translate(-20%, -20%);
+    position: absolute;
+    top: 20px;
+    left: 30px;
+}
+
+.nav-icons {
+    display: flex;
+    gap: 30px;
+    transform: translateX(30%);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.nav-icons i {
+    color: #f0f1f0;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.nav-icons i:hover {
+    color: yellow;
+    transition: 0.5s;
+}
+
+.Login {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+.Login:hover {
+    color: rgb(240, 240, 227);
+    background-color: #0e5e8a;
+    transition: 0.5s;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.text-box {
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 8.5%;
+    left: 53.5%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+.textbox2 {
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.textbox2 .line1 {
+    font-size: 4.5em;
+    font-weight: normal;
+    color: #e0dddc;
+    text-shadow: 2px 2px 4px #ffc107;
+}
+
+.textbox2 .line2 {
+    font-size: 4.5em;
+    font-weight: bold;
+    color: #ffb300;
+    margin-top: 20px;
+    text-shadow: 2px 2px 4px #870202;
+}
+
+.info-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 50px;
+    margin-top: 450px;
+}
+
+.info-box {
+    width: 30%;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    text-align: left;
+    color: white;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.info-box:nth-child(1) {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('img/academy-celebrate-celebration-267885-1-1024x683.jpg');
+}
+
+.info-box:nth-child(2) {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('img/images.jpeg');
+}
+
+.info-box:nth-child(3) {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('img/Visual-and-Cultural-Studies-Class-Cerritos.jpg');
+}
+
+.info-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.info-box h3 {
+    font-size: 24px;
+    color: #ffca28;
+}
+
+.info-box hr {
+    width: 150px;
+    border: 2px solid rgb(255, 255, 255);
+    margin: 10px auto;
+    margin-right: 300px;
+    transition: width 0.3s ease, border-color 0.3s ease;
+}
+
+.info-box:hover hr {
+    width: 200px;
+    border-color: #ffb300;
+}
+
+.info-box p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.read-more {
+    background: #0e5e8a;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: white;
+    border-radius: 20px;
+    transition: background 0.3s ease;
+    margin-left: 320px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    .info-box {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+
+    .nav-icons {
+        transform: translateX(0);
+    }
+
+    .text-box {
+        top: 10%;
+        left: 50%;
+    }
+
+    .textbox2 .line1, .textbox2 .line2 {
+        font-size: 3em;
+    }
+}
+
+@media (max-width: 768px) {
+    .info-box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .nav-icons {
+        gap: 20px;
+    }
+
+    .text-box {
+        top: 12%;
+        left: 50%;
+    }
+
+    .textbox2 .line1, .textbox2 .line2 {
+        font-size: 2.5em;
+    }
+}
+
+@media (max-width: 480px) {
+    .info-box h3 {
+        font-size: 20px;
+    }
+
+    .info-box p {
+        font-size: 14px;
+    }
+
+    .read-more {
+        padding: 8px 16px;
+        font-size: 14px;
+        margin-left: 0;
+    }
+
+    .nav-icons {
+        gap: 10px;
+    }
+
+    .text-box {
+        top: 15%;
+        left: 50%;
+    }
+
+    .textbox2 .line1, .textbox2 .line2 {
+        font-size: 2em;
+    }
+
+    .Login {
+        font-size: 16px;
+    }
+}
+
+.features {
+    display: none;
+}
+
+.features.visible {
+    display: block;
+}
