@@ -1,13 +1,13 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    overflow: hidden;
 }
 
 .header {
@@ -49,11 +49,28 @@ nav img {
     font-size: 25px;
     cursor: pointer;
     transition: 0.5s;
+    position: relative;
 }
 
 .nav-icons i:hover {
-    color: yellow;
+    color: white;
     transition: 0.5s;
+}
+
+.nav-icons i::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background: #21618c;
+    left: 50%;
+    bottom: -5px;
+    transition: 0.5s;
+}
+
+.nav-icons i:hover::after {
+    width: 100%;
+    left: 0;
 }
 
 .Login {
@@ -64,14 +81,14 @@ nav img {
     font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
     color: white;
+    transition: width 0.3s ease, border-color 0.3s ease;
 }
 
 .Login:hover {
     color: rgb(240, 240, 227);
     background-color: #0e5e8a;
     transition: 0.5s;
-    font-weight: bold;
-    padding: 10px 20px;
+    padding: 8px 16px;
     border-radius: 20px;
 }
 
@@ -122,10 +139,10 @@ nav img {
 }
 
 .info-box {
-    width: 30%;
-    padding: 20px;
+    width: 32.5%;
+    padding: 40px;
     background: rgba(255, 255, 255, 0.2);
-    border-radius: 10px;
+    border-radius: 15px;
     text-align: left;
     color: white;
     transition: transform 0.5s ease, box-shadow 0.5s ease;
@@ -154,19 +171,21 @@ nav img {
 .info-box h3 {
     font-size: 24px;
     color: #ffca28;
+    transform: translate(-6%,-80%);
 }
 
 .info-box hr {
-    width: 150px;
+    width: 120px;
     border: 2px solid rgb(255, 255, 255);
     margin: 10px auto;
-    margin-right: 300px;
+    margin-right: 400px;
+    transform: translate(-15%, -700%);
     transition: width 0.3s ease, border-color 0.3s ease;
 }
 
 .info-box:hover hr {
     width: 200px;
-    border-color: #ffb300;
+    border-color: #b9770e;
 }
 
 .info-box p {
@@ -182,7 +201,14 @@ nav img {
     color: white;
     border-radius: 20px;
     transition: background 0.3s ease;
-    margin-left: 320px;
+    margin-left: 270px;
+    margin-top: 100px;
+    transform: translate(25%, 50%);
+}
+
+.read-more:hover {
+    background: #062337;
+    transition: 0.3px;
 }
 
 /* Media Queries for Responsiveness */
@@ -255,7 +281,7 @@ nav img {
     }
 
     .Login {
-        font-size: 16px;
+        font-size: 10px;
     }
 }
 

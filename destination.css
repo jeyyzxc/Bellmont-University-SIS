@@ -1,0 +1,96 @@
+*{
+    margin: 0;  
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 120vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(img/Corpus-Christi-College-University-of-Cambridge-England.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+.login-box{
+    width: 400px;
+    height: 450px;
+    background: transparent;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    padding: 70px 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    backdrop-filter: blur(5px);
+}
+
+.login-box img {
+    width: 50%;
+    height: 50%;
+    margin-bottom: 15px;
+    align-items: center;
+    transform: translateY(-55%);
+}
+
+.login-box h1{
+    margin-bottom: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    transform: translateY(-430%);
+}
+.login-box h3{
+    margin-bottom: 30px;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: center;
+    transform: translateY(-660%);
+}
+.destination{
+    margin-top: 80px;
+    margin-bottom: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    transform: translateY(-130%);
+}
+.student{
+    margin-bottom: 15px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 150px;
+    border-radius: 20px;
+    background: #b7950b;
+    color: darkred;
+}
+.student:hover{
+    background: darkred;
+    color: #b7950b;
+}
+.faculty{
+    margin-bottom: 30px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 150px;
+    border-radius: 20px;
+    background: #b7950b;
+    color: darkred;
+}
+.faculty:hover{
+    background: darkred;
+    color:#b7950b;
+}

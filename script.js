@@ -25,22 +25,26 @@ document.addEventListener('DOMContentLoaded', function() {
             console.log('No features section found');
         }
     });
-    // AKO NAG LAGAY NITO PRE AH,
+
     // Login functionality
     const loginButton = document.querySelector('.Login');
     loginButton.addEventListener('click', function() {
-        login();
-    }); 
+        window.location.href = 'login.html';
+    });
+});
 
-    function login() {
-        const username = prompt('Enter username:');
-        const password = prompt('Enter password:');
-        if (username && password) {
-            // Implement login logic here
-            console.log('Logging in with', username);
-        } else {
-            console.log('Username or password not provided');
-        }
-    }
+document.addEventListener("DOMContentLoaded", function () {
+    // List of background images
+    const images = [
+        "img/Corpus-Christi-College-University-of-Cambridge-England.webp",
+        "img/Visual-and-Cultural-Studies-Class-Cerritos.jpg",
+        "img/images1.jpeg",
+        "img/academy-celebrate-celebration-267885-1-1024x683.jpg"
+    ];
 
+    // Select a random image
+    const randomImage = images[Math.floor(Math.random() * images.length)];
+
+    // Apply the background image to the body or a specific element
+    document.querySelector(".header").style.backgroundImage = `linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(${randomImage})`;
 });
